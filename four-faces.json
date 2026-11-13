@@ -1,0 +1,351 @@
+{
+  "title": "Four Faces of AI Risk",
+  "mark": "Four Faces of AI Risk™",
+  "trademark_notice": "Four Faces of AI Risk™ is a trademark of Evan Wheeler.",
+  "tagline": "the differences matter",
+  "version": "1.0",
+  "status": "Open for comment",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "© 2026 Evan Wheeler",
+  "claim": "\"AI risk\" is not one risk. It is four, with different causes, owners, controls, data, and forms of loss, and nothing useful happens in an assessment until you say which one you mean.",
+  "faces": [
+    {
+      "n": 1,
+      "tag": "Strategy",
+      "headline": "Innovate with AI",
+      "shorthand": "We bet wrong.",
+      "question": "Are we making the right bets?",
+      "definition": "We move too slowly, too timidly, or fast with no strategy behind the bets. The AI may work exactly as intended; the choices about where, how fast, and how much were wrong.",
+      "phrase": "A solution looking for a problem",
+      "looks": [
+        "Losing ground to faster competitors",
+        "bets mistimed or driven by hype",
+        "returns that never arrive (unattributable, or waiting on workflow changes no one made)",
+        "scarce talent and skills",
+        "cost and dependence that creep up"
+      ],
+      "loss_label": "Value",
+      "loss": "stranded spend, forgone value, competitive erosion, structural cost increases. Measured as variance against a plan or business case, not as a loss event.",
+      "action": "Set the appetite. Name the bets, and the pace.",
+      "finance_word": "Investment",
+      "short_forms": {
+        "looks": [
+          "Losing ground to faster competitors",
+          "Bets mistimed or driven by hype",
+          "Returns that never arrive",
+          "Scarce talent and skills",
+          "Cost and dependence that creep up"
+        ],
+        "loss": "Value: stranded spend, forgone value, competitive erosion, structural cost increases"
+      }
+    },
+    {
+      "n": 2,
+      "tag": "Execution",
+      "headline": "Build and run AI responsibly",
+      "shorthand": "We botched it.",
+      "question": "Is it well built and well run?",
+      "definition": "AI we chose to adopt is badly designed, built, or used. No one acted against us; the cause is ours.",
+      "phrase": "Move fast and break things",
+      "looks": [
+        "Wrong or inconsistent answers",
+        "bias and unequal performance",
+        "data used without rights or consent",
+        "obligations missed",
+        "oversight that cannot keep up"
+      ],
+      "loss_label": "Operational, stakeholder, obligation, and information outcomes",
+      "loss": "our AI fails or misfires and harms us or the people who depend on it.",
+      "action": "Build and run it against a named set of risks, at every stage of its life.",
+      "finance_word": "Error",
+      "short_forms": {
+        "looks": [
+          "Wrong or inconsistent answers",
+          "Bias and unequal performance",
+          "Data used without rights or consent",
+          "Obligations missed",
+          "Oversight that cannot keep up"
+        ],
+        "loss": "Our AI fails or misfires and harms us or the people who depend on it"
+      }
+    },
+    {
+      "n": 3,
+      "tag": "Subversion",
+      "headline": "Prevent abuse of our AI",
+      "shorthand": "They hijacked ours.",
+      "question": "Can it be turned against us?",
+      "definition": "Someone deliberately pushes our AI past the bounds we set, and we did not prevent it.",
+      "phrase": "Our AI, hijacked",
+      "looks": [
+        "Inputs that hijack behavior",
+        "poisoned data, models, or memory",
+        "models and secrets extracted",
+        "compromised supply chain",
+        "agents turned against us",
+        "our data or insights carried into someone else's AI"
+      ],
+      "loss_label": "The outcomes of face 2 or face 4, reached through our own AI",
+      "loss": "harm to stakeholders, data exposure, theft of funds, obligations breached. Same outcomes, different cause, safeguards, and frequency.",
+      "action": "Test how it could be abused. Guard it like any other critical asset.",
+      "finance_word": "Misappropriation",
+      "short_forms": {
+        "looks": [
+          "Inputs that hijack behavior",
+          "Poisoned data, models, or memory",
+          "Models and secrets extracted",
+          "Compromised supply chain",
+          "Agents turned against us",
+          "Our data or insights carried into someone else's AI"
+        ],
+        "loss": "The outcomes of face 2 or face 4, reached through our own AI"
+      }
+    },
+    {
+      "n": 4,
+      "tag": "Attack",
+      "headline": "Defend against their AI",
+      "shorthand": "They attacked with theirs.",
+      "question": "Is theirs aimed at us?",
+      "definition": "Someone turns their AI on us, and we are not ready.",
+      "phrase": "A knife to a gunfight",
+      "looks": [
+        "Deepfake impersonation",
+        "AI-enabled fraud and phishing",
+        "autonomous attack agents",
+        "frontier capability with the guardrails stripped"
+      ],
+      "loss_label": null,
+      "loss": "Financial crime, service disruption, data exposure, with the speed, scale, and adaptability only AI makes possible.",
+      "action": "Build defenses for AI-enabled attacks and deepfakes. Test them before an attacker does.",
+      "finance_word": "External threat",
+      "short_forms": {
+        "looks": [
+          "Deepfake impersonation",
+          "AI-enabled fraud and phishing",
+          "Autonomous attack agents",
+          "Frontier capability with the guardrails stripped"
+        ],
+        "loss": "Financial crime, service disruption, data exposure, with the speed, scale, and adaptability only AI makes possible"
+      }
+    }
+  ],
+  "brackets": {
+    "faces_1_3": "Our AI: get it right",
+    "face_4": "Their AI: be ready"
+  },
+  "three_questions": [
+    {
+      "question": "Whose AI?",
+      "answer": "Theirs, aimed at us → face 4."
+    },
+    {
+      "question": "Ours (our AI, or the data, models, and outputs it is built from or produces). Did someone deliberately push it past the bounds we set?",
+      "answer": "Yes → face 3."
+    },
+    {
+      "question": "No. Where did it go wrong?",
+      "answer": "In how AI we chose was built or run, causing an operational failure → face 2. Where we chose to invest, how fast, and how much, causing a strategic shortfall → face 1."
+    }
+  ],
+  "seams": [
+    {
+      "seam": "1 / 2",
+      "question": "Was it the choice of bets, or how a chosen AI was built and run?",
+      "terms": "Strategic shortfall (1) vs. operational failure (2). Decisions about whether, where, how fast, and how much are face 1. The performance of what was deployed is face 2. Place it by what went wrong, not when it became visible: a bet that was wrong when it was made is face 1, even when the loss first shows up in operations."
+    },
+    {
+      "seam": "2 / 3",
+      "question": "Did someone deliberately push our AI past the bounds we set?",
+      "terms": "Accident or carelessness (2) vs. intentional misuse (3). The test is deliberate action, not malice: a curious user who jailbreaks our agent is face 3."
+    },
+    {
+      "seam": "3 / 4",
+      "question": "Whose AI is it?",
+      "terms": "Ours (3) means our AI, adopted however sourced, and the data, models, and outputs it is built from or produces; theirs (4) means their AI, aimed at us. For a lay audience: which system did the damage, ours or theirs? and, where our assets have left our hands, did they misuse something of ours, or attack us with something of theirs? Face 3 feels like an enemy within because the harm comes through something of ours, but the person steering it may be an employee, a customer, a partner, or a stranger."
+    }
+  ],
+  "edge_rules": [
+    {
+      "n": 1,
+      "rule": "AI you adopt is yours, however it fails.",
+      "detail": "A vendor's model, a hosted service, an open-weight model you run: once adopted, its failures are face 2 and its abuse is face 3. Accountability does not transfer with sourcing. This is why the frame does not separate externally sourced AI into its own face."
+    },
+    {
+      "n": 2,
+      "rule": "AI aimed at you is theirs.",
+      "detail": "Face 4 is about attack and fraud. AI that is merely nearby, failing in someone else's systems, is not an AI risk you manage; any exposure is handled as ordinary third-party or counterparty risk. Face 4 is deliberately not widened to accidental harm. Exception, which is face 1: the effect of competitors' or customers' AI on the value of our own strategy, such as advantages built on knowledge, data, or skilled work that others can now approximate. No one acts against us, but how we respond is our own strategic decision, so it belongs with the other strategic choices."
+    },
+    {
+      "n": 3,
+      "rule": "Intent means a person's intent.",
+      "detail": "When our own agent escapes its sandbox or pursues an authorized goal by unauthorized means, no person acted deliberately against our bounds: face 2. For an AI agent, the person whose intent counts is its principal: the one it acts for."
+    },
+    {
+      "n": 4,
+      "rule": "Careless misuse is face 2; intentional misuse is face 3.",
+      "detail": "An employee pasting client data into a chatbot is face 2. A user deliberately steering our AI to produce fraud or disinformation is face 3."
+    },
+    {
+      "n": 5,
+      "rule": "Organizational misconduct sorts by the organization's stance.",
+      "detail": "Even where an individual acted knowingly (overstating AI capability, for example), the organization's position is that it did not mean it: face 2. A malicious insider acting against the organization is face 3."
+    },
+    {
+      "n": 6,
+      "rule": "When intent is unknown, scope both.",
+      "detail": "Accident and intentional misuse are different threat communities with different frequencies. Write two scenarios rather than one blended one."
+    },
+    {
+      "n": 7,
+      "rule": "Safeguard gaps and amplifiers take the faces of the losses they affect; only a general amplifier has no face.",
+      "detail": "Weak board oversight, no governance body, low AI literacy, or an insurance gap are not loss events on their own. Each takes the faces of the losses it would prevent or limit, and in an assessment it is a condition on those scenarios, never a scenario of its own. An amplifier changes how often, how far, or how badly a loss lands, and it takes the faces of the losses it amplifies, such as reputational damage when our AI fails in public. Only an amplifier that applies equally to any face, such as reputational damage in general, takes no face. That kind turns up in an organization's own register; a factor library limited to conditions unique to AI, such as the AI Risk Map, won't carry one."
+    },
+    {
+      "n": 8,
+      "rule": "One condition can create two scenarios.",
+      "detail": "Some weaknesses we create can hurt us by accident and can also be exploited on purpose. Each way it can hurt us is a separate scenario, scoped in its own face, with its own frequency and controls. Example: our retrieval system returns documents beyond the requesting user's entitlements. A legitimate employee asks an ordinary question and is shown a confidential salary file: face 2, an operational failure, with frequency driven by normal usage. An attacker probes the same system to extract that file on purpose: face 3, intentional misuse, with frequency driven by attack attempts. Same weakness, two scenarios. Do not merge them, and do not pick one and drop the other."
+    },
+    {
+      "n": 9,
+      "rule": "Spend on deployed AI is operational; spend decisions are strategic.",
+      "detail": "Runaway token or compute spend because usage of deployed AI is not managed is face 2. Forecasting, investment size, and provider choice are face 1."
+    },
+    {
+      "n": 10,
+      "rule": "Backlash over AI use is face 1.",
+      "detail": "When stakeholders object to our use of AI although nothing failed (replacing people, using AI in hiring, an AI-only channel), the loss follows from the adoption choice. It is face 2 only when the objection is to conduct in use, such as failing to disclose that AI was involved."
+    },
+    {
+      "n": 11,
+      "rule": "Our assets in their AI are face 3 when our bounds were crossed.",
+      "detail": "When a customer or partner takes data, insights, or outputs from our AI into their own AI and uses them past the terms we set (reverse-engineering the source, targeting individuals at scale, replicating our model to replace our service), that is deliberate action against our bounds: face 3, even though the AI doing the work is theirs and no one attacks us. The actor need not be hostile; a partner may believe the use is permitted (deliberate, not malicious). When no bounds were crossed, for example a competitor approximating our advantage with general-purpose AI and public information, it is face 1 under edge rule 2's exception."
+    }
+  ],
+  "factor_rules": [
+    {
+      "n": 1,
+      "rule": "A safeguard gap takes the faces of the losses it would prevent or limit. Ask: if this safeguard is missing, what goes wrong? Give the factor those faces. (Weak board oversight → 1 and 2; no acceptable-use policy → 2; an insurance gap → 2 and 3.)"
+    },
+    {
+      "n": 2,
+      "rule": "Record separately how a factor enters an assessment: its condition type. The values are shared with the AI Risk Map, so its factors already carry them. A cause becomes a scenario. A safeguard gap (a missing or deficient safeguard) becomes a condition on the scenarios it protects, never a scenario of its own. An outcome names the loss event rather than what produces it (stranded investment, labor-relations impacts, harmful output driving decisions); it takes the faces of the causes it names and is linked to them. An amplifier changes how often, how far, or how badly a loss lands; it takes the faces of the losses it amplifies, and only one that applies equally to any face takes no face. A factor library limited to conditions unique to AI, such as the AI Risk Map, holds no faceless amplifiers; the faceless case is for items in an organization's own register, such as reputational damage in general."
+    },
+    {
+      "n": 3,
+      "rule": "One step only. Assign faces by what a factor causes or protects directly. Do not follow longer chains (weak governance → weak controls → breach), or every factor ends up in every face."
+    },
+    {
+      "n": 4,
+      "rule": "The 2/3 straddle test. A cause straddles faces 2 and 3 only when its own condition can cause an operational failure with no one acting against us and create an opening someone can deliberately abuse; if it matters only when exploited, it is face 3. A missing safeguard straddles 2 and 3 only when it limits both kinds of loss and deliberate misuse is a main reason it exists, not just a possible case (incident response and investigation straddle; documentation and version control do not)."
+    },
+    {
+      "n": 5,
+      "rule": "When the attack has its own factor, the condition does not double up. If a separate factor already names the deliberate version (data extraction, memory poisoning, a planted model), the condition that creates the opening takes face 2 only, and the two are linked. This does not apply to detection and response safeguards, which respond to whatever happened."
+    },
+    {
+      "n": 6,
+      "rule": "Classify by the factor's own condition, not by the face of the loss it eventually worsens. Our defensive model refusing to analyze attack data is face 2, even though it worsens a face 4 incident. When our AI is itself a control, its failure is a condition on the scenario it protects; that scenario's actor sets the frequency, and the AI failure keeps its own face for ownership."
+    },
+    {
+      "n": 7,
+      "rule": "Event-type factors take the faces of their direct causes. An agent taking an irreversible action is an event; it can be caused by the agent's own error (2) or by someone hijacking it (3)."
+    },
+    {
+      "n": 8,
+      "rule": "Supplier and people factors split by the loss, not the function. Suppliers: the shape and cost of our dependence (concentration, lock-in, switching cost, exit terms, viability) → 1; the supplier's AI behaving badly in our use → 2 (edge rule 1). People: capacity, adoption, and foreseeable side effects of the adoption strategy on our own capabilities (deskilling, lost institutional knowledge) → 1; how people use and oversee deployed AI, and fallbacks when it is unavailable → 2. Procurement and workforce are functions that appear in both faces, as governance does."
+    }
+  ],
+  "vocabulary": [
+    {
+      "use": "faces, kinds (as the name for the four)",
+      "avoid": "dimensions, quadrants (as the name)",
+      "why": "Faces are sorted into, not scored along; it is not a 2×2."
+    },
+    {
+      "use": "condition type: cause, safeguard gap, amplifier, outcome (how a factor enters an assessment)",
+      "avoid": "acts as; consequence; loss (as a condition type)",
+      "why": "The AI Risk Map's field and values since v2.0; one vocabulary across the works"
+    },
+    {
+      "use": "abuse, intentional misuse (face 3)",
+      "avoid": "misuse, unqualified",
+      "why": "Misuse without intent is face 2"
+    },
+    {
+      "use": "deliberate action (the 2/3 test)",
+      "avoid": "malice, malicious (as the test)",
+      "why": "A curious jailbreaker is face 3 without malice"
+    },
+    {
+      "use": "misappropriation (finance view)",
+      "avoid": "fraud",
+      "why": "\"AI fraud\" means face 4 to executives"
+    },
+    {
+      "use": "strategic shortfall (face 1)",
+      "avoid": "failure, unqualified, for face 1",
+      "why": "Face 1 is a failure of choices, not of operation; keep \"failure\" for face 2 or qualify it"
+    },
+    {
+      "use": "external threat",
+      "avoid": "external force",
+      "why": "Face 4 has an adversary"
+    }
+  ],
+  "condition_types": [
+    {
+      "type": "Cause",
+      "definition": "the first thing that goes wrong; fix it and the loss never starts.",
+      "shared_with": "AI Risk Map"
+    },
+    {
+      "type": "Safeguard gap",
+      "definition": "a missing or weak control; fix it and the first failure still happens, but a later step is stopped or the loss is softened. It is a condition on the scenarios it protects, never a scenario of its own.",
+      "shared_with": "AI Risk Map"
+    },
+    {
+      "type": "Amplifier",
+      "definition": "changes how often losses happen, how far they spread, or how badly they land, without causing them.",
+      "shared_with": "AI Risk Map"
+    },
+    {
+      "type": "Outcome",
+      "definition": "names the loss event itself.",
+      "shared_with": "AI Risk Map"
+    }
+  ],
+  "measurement": [
+    {
+      "face": "1 Strategy",
+      "frequency_driver": "Decision cycles, launches, and supplier events such as repricing and deprecation, not recurring loss events",
+      "loss": "Variance against a plan or business case: stranded spend, forgone value, competitive erosion, structural cost"
+    },
+    {
+      "face": "2 Execution",
+      "frequency_driver": "How much the AI is used and how often it errs, drifts, or is used carelessly; usage, defect, and incident data",
+      "loss": "Our own failure: operational, stakeholder, obligation, and information outcomes, and the cost of putting them right"
+    },
+    {
+      "face": "3 Subversion",
+      "frequency_driver": "How often someone tries to push our AI past its bounds, and how often our safeguards stop them",
+      "loss": "Often the same outcomes as faces 2 and 4, with different response costs, insurance recovery, and secondary loss"
+    },
+    {
+      "face": "4 Attack",
+      "frequency_driver": "Adversaries' activity and capability, largely outside our control; threat intelligence",
+      "loss": "Financial crime, disruption, and exposure with the speed, scale, and adaptability only AI makes possible"
+    }
+  ],
+  "companions": [
+    {
+      "name": "AI Risk Map",
+      "relationship": "optional risk-factor library; Four Faces works without it",
+      "license": "CC BY-SA 4.0",
+      "url": "https://www.riskframework.org/ai-risk-map/",
+      "repo": "https://github.com/wheels344i-gte/ai-risk-map",
+      "file": "AI-Risk-Map.md"
+    }
+  ]
+}
