@@ -3,7 +3,7 @@
   "mark": "Four Faces of AI Risk™",
   "trademark_notice": "Four Faces of AI Risk™ is a trademark of Evan Wheeler.",
   "tagline": "the differences matter",
-  "version": "1.0",
+  "version": "1.1",
   "status": "Open for comment",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
@@ -221,6 +221,11 @@
       "n": 11,
       "rule": "Our assets in their AI are face 3 when our bounds were crossed.",
       "detail": "When a customer or partner takes data, insights, or outputs from our AI into their own AI and uses them past the terms we set (reverse-engineering the source, targeting individuals at scale, replicating our model to replace our service), that is deliberate action against our bounds: face 3, even though the AI doing the work is theirs and no one attacks us. The actor need not be hostile; a partner may believe the use is permitted (deliberate, not malicious). When no bounds were crossed, for example a competitor approximating our advantage with general-purpose AI and public information, it is face 1 under edge rule 2's exception."
+    },
+    {
+      "n": 12,
+      "rule": "When their AI attacks our AI, the face is 3.",
+      "detail": "If someone uses their own AI to subvert ours, for example by generating and testing injected instructions against our agent at machine speed, the damage still comes through our AI: face 3. Their AI raises the capability and frequency of the attempts; it does not change the face. Face 4 is when their AI does the damage itself, with nothing of ours turned against us."
     }
   ],
   "factor_rules": [

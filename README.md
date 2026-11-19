@@ -11,7 +11,8 @@
 
 Four Faces of AI Risk sorts any AI risk by its cause before you try to measure it. Each face has its own cause, owner, controls, and data, so each becomes its own risk scenario instead of one blended worry.
 
-*v1.0 · Open for comment.* Questions and pushback are welcome; see [Proposing changes](#proposing-changes). The full page is at [riskframework.org](https://www.riskframework.org/four-faces/), and how-to articles on applying it are in [Thinking](https://www.riskframework.org/thinking/).
+
+*v1.1 · Open for comment.* Questions and pushback are welcome; see [Proposing changes](#proposing-changes). The full page is at [riskframework.org](https://www.riskframework.org/four-faces/), and how-to articles on applying it are in [Thinking](https://www.riskframework.org/thinking/).
 
 ---
 
@@ -83,6 +84,22 @@ The AI Risk Map covers faces 1–3. Face 4 is outside its subject boundary by de
 - Intent is not always known when you scope. When it isn't, scope more than one face.
 - Face 1 is measured differently: as variance against a plan, at the pace of decision cycles.
 
+## What changed in v1.1
+
+v1.1 is a minor version: it adds rules and examples, and no face, question, or existing placement changes. File names are unchanged, and nothing you cited has disappeared. The full list is the *Version history* at the end of `Four-Faces-of-AI-Risk.md`.
+
+**New to leverage**
+
+- **Edge rule 12.** When their AI attacks our AI, the face is 3. Their AI raises the capability and frequency of the attempts; it does not change the face.
+- **A second worked example: depending on a foundation-model provider.** Repricing, silent model changes, outages, and supply-chain compromise, each placed, with concentration treated as an amplifier rather than a fifth face.
+- **A 3/4 trio.** Beside the hijacked payments agent and the deepfake CFO, a third case: an attacker's AI injecting instructions into our agent.
+
+**Check against earlier work**
+
+- **Faces sort scenarios, not incidents.** One incident or register line can hold more than one scenario (edge rules 6 and 8), but each scenario sits in one face. A risk that seems to fit two faces is usually two scenarios.
+- **One face, many scenarios.** The face names the kind of cause; the scenario names the specific one. One face can hold several scenarios with different threat communities and safeguards: prompt injection, model extraction, and data poisoning are all face 3, and each is scoped and estimated as its own scenario.
+- **Rule numbers.** Edge rules 1 to 11 keep their numbers; rule 12 is new.
+
 ## Frequently asked
 
 **Why four?**
@@ -92,7 +109,7 @@ We didn't pick four. The causes did. Did somebody do this to us? If no: was it t
 No. The faces sort risk; they don't measure it. Placing a scenario in a face tells you who has to act and what drives its frequency, not how often it will happen or what it will cost. That is the next step in the analysis.
 
 **How do I cite it?**
-> Wheeler, E. (2026). *Four Faces of AI Risk* v1.0. Licensed CC BY 4.0. https://github.com/wheels344i-gte/ai-four-faces/releases/tag/v1.0
+> Wheeler, E. (2026). *Four Faces of AI Risk* v1.1. Licensed CC BY 4.0. https://github.com/wheels344i-gte/ai-four-faces/releases/tag/v1.1
 
 **How do I link to it?**
 File names carry no version number, so links don't break when a new version ships. The current version is stated inside every file and in the [release list](https://github.com/wheels344i-gte/ai-four-faces/releases).
@@ -100,7 +117,7 @@ File names carry no version number, so links don't break when a new version ship
 | You want | Link pattern |
 |---|---|
 | Always the current version (websites, slides, bookmarks) | `https://github.com/wheels344i-gte/ai-four-faces/blob/main/Four-Faces-of-AI-Risk.md` |
-| One specific version, unchanging (citations, audits) | `https://github.com/wheels344i-gte/ai-four-faces/blob/v1.0/Four-Faces-of-AI-Risk.md` |
+| One specific version, unchanging (citations, audits) | `https://github.com/wheels344i-gte/ai-four-faces/blob/v1.1/Four-Faces-of-AI-Risk.md` |
 | The file itself, for tools, scripts, AI assistants, or embedding an image | Replace `blob` with `raw` in either link above |
 
 Replace `Four-Faces-of-AI-Risk.md` with any file in the table above.

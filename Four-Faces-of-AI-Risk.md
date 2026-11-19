@@ -1,6 +1,6 @@
 # Four Faces of AI Risk™
 
-**Version 1.0 · Open for comment · November 2026 · © 2026 Evan Wheeler · Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**
+**Version 1.1 · Open for comment · November 2026 · © 2026 Evan Wheeler · Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**
 
 *The differences matter.*
 
@@ -26,6 +26,8 @@ Four Faces does two jobs. For executives, it is a mental model: four separate co
 | **2 Execution** | How much the AI is used and how often it errs, drifts, or is used carelessly; usage, defect, and incident data | Our own failure: operational, stakeholder, obligation, and information outcomes, and the cost of putting them right |
 | **3 Subversion** | How often someone tries to push our AI past its bounds, and how often our safeguards stop them | Often the same outcomes as faces 2 and 4, with different response costs, insurance recovery, and secondary loss |
 | **4 Attack** | Adversaries' activity and capability, largely outside our control; threat intelligence | Financial crime, disruption, and exposure with the speed, scale, and adaptability only AI makes possible |
+
+The face names the kind of cause; the scenario names the specific one. One face can hold several scenarios with different threat communities and safeguards: prompt injection, model extraction, and data poisoning are all face 3, and each is scoped and estimated as its own scenario.
 
 **Why the lines fall where they do.** The 1/2 line separates decisions from operations, because face 1 is measured as variance against a plan, at the pace of decision cycles. The 2/3 line follows intent, because accidents and deliberate misuse come from different threat communities with different frequencies. The 3/4 line follows whose AI, because the safeguards that matter and the evidence for frequency both change when the AI doing the damage is theirs.
 
@@ -140,6 +142,8 @@ The line between faces 2 and 3 is labeled **accident « » intent**.
 
 ## Placing a risk
 
+**Faces sort scenarios, not incidents.** One incident or register line can hold more than one scenario (edge rules 6 and 8), but each scenario sits in one face. A risk that seems to fit two faces is usually two scenarios.
+
 Three questions, in order:
 
 1. **Whose AI?** Theirs, aimed at us → face 4.
@@ -158,7 +162,7 @@ Three questions, in order:
 
 **In face 1 the actor is always the decision-maker.** Frequency in face 1 comes from decision cycles, launches, and supplier events such as repricing and deprecation, not from recurring loss events.
 
-**A 3/4 pair:** A hijacked payments agent (face 3) and a deepfake CFO (face 4) both end in theft of funds, with the same primary losses. Their cause, pathway, safeguards, and frequency driver all differ. The lay question settles it: which system did the damage?
+**A 3/4 trio:** A hijacked payments agent (face 3) and a deepfake CFO (face 4) both end in theft of funds, with the same primary losses. Their cause, pathway, safeguards, and frequency driver all differ. A third case sits between them: an attacker's AI writes and tests injected instructions until our payments agent releases the funds. Their AI did the attacking, but our agent did the damage: face 3 (edge rule 12). The lay question settles all three: which system did the damage?
 
 ## Edge rules
 
@@ -175,6 +179,7 @@ These settle the cases that come up most often.
 9. **Spend on deployed AI is operational; spend decisions are strategic.** Runaway token or compute spend because usage of deployed AI is not managed is face 2. Forecasting, investment size, and provider choice are face 1.
 10. **Backlash over AI use is face 1.** When stakeholders object to our use of AI although nothing failed (replacing people, using AI in hiring, an AI-only channel), the loss follows from the adoption choice. It is face 2 only when the objection is to conduct in use, such as failing to disclose that AI was involved.
 11. **Our assets in their AI are face 3 when our bounds were crossed.** When a customer or partner takes data, insights, or outputs from our AI into their own AI and uses them past the terms we set (reverse-engineering the source, targeting individuals at scale, replicating our model to replace our service), that is deliberate action against our bounds: face 3, even though the AI doing the work is theirs and no one attacks us. The actor need not be hostile; a partner may believe the use is permitted (deliberate, not malicious). When no bounds were crossed, for example a competitor approximating our advantage with general-purpose AI and public information, it is face 1 under edge rule 2's exception.
+12. **When their AI attacks our AI, the face is 3.** If someone uses their own AI to subvert ours, for example by generating and testing injected instructions against our agent at machine speed, the damage still comes through our AI: face 3. Their AI raises the capability and frequency of the attempts; it does not change the face. Face 4 is when their AI does the damage itself, with nothing of ours turned against us.
 
 ## Going further with a risk-factor library
 
@@ -224,6 +229,17 @@ The three questions and the edge rules place a scenario. Risk registers and fact
 | We ban AI on customer data out of unfounded fear, while competitors adopt it with sound controls | 1 · Strategy | Strategic shortfall; the fear itself produces the loss |
 
 One register line becomes six scenarios across all four faces.
+
+### Worked example: depending on a foundation-model provider
+
+| What actually happens | Face | Scenario |
+|---|---|---|
+| The provider reprices or retires the model our product depends on, and switching costs more than the plan allowed | 1 · Strategy | The shape of our dependence (factor rule 8); frequency from supplier events |
+| The provider ships a model change without notice, and our outputs degrade | 2 · Execution | Adopted AI failing in our use (edge rule 1); frequency from change events and monitoring |
+| The provider has a widespread outage, and every workflow built on it stops | 2 · Execution | Adopted AI failing in our use (edge rule 1); frequency from provider availability history |
+| An attacker compromises the provider's model or supply chain to reach us | 3 · Subversion | Our adopted AI abused (edge rule 1); frequency from attacks on the AI supply chain |
+
+The strategic decision need not have been obviously bad: face 1 measures variance against the plan, not hindsight. Concentration is not a fifth face. It is an amplifier: when many workflows, or many firms, depend on one provider, these scenarios happen together and their losses correlate. Record it on each scenario it touches (edge rule 7), not as a scenario of its own.
 
 ## The finance view
 
@@ -276,6 +292,8 @@ You are helping me apply the Four Faces of AI Risk. Follow these rules:
    factors to widen each face's scope and cite their AIRM IDs. If it
    is not, work from this file alone: do not invent factor IDs or
    assume what the AI Risk Map contains.
+10. If I am working from an earlier version of this file, check its
+   Version history (at the end) before relying on a rule number.
 ```
 
 **Questions this file answers well:**
@@ -323,8 +341,15 @@ Four Faces of AI Risk © 2026 Evan Wheeler, licensed [CC BY 4.0](https://creativ
 
 Four Faces of AI Risk™ is a trademark of Evan Wheeler.
 
-**Cite as:** Wheeler, E. (2026). *Four Faces of AI Risk* v1.0. Licensed CC BY 4.0. https://www.riskframework.org/four-faces/
+**Cite as:** Wheeler, E. (2026). *Four Faces of AI Risk* v1.1. Licensed CC BY 4.0. https://www.riskframework.org/four-faces/
+
+## Version history
+
+| Version | Date | Changes |
+|---|---|---|
+| **v1.0** | November 2026 | First public release, status Open for comment. Four faces (Strategy, Execution, Subversion, Attack), three placement questions, eleven edge rules, eight factor rules, a worked example, the finance view, and instructions for AI assistants. |
+| **v1.1** | November 2026 | Minor release, from early reviewer feedback. No face, question, or existing placement changes. ADDED: edge rule 12, when their AI attacks our AI the face is 3; a third case beside the 3/4 pair (an attacker's AI injecting instructions into our payments agent); a second worked example, depending on a foundation-model provider, with concentration treated as an amplifier. CLARIFIED: faces sort scenarios, not incidents; the face names the kind of cause and the scenario names the specific one, so one face can hold several scenarios. Graphics carry no version number from this release. |
 
 ---
 
-*Four Faces of AI Risk™ v1.0 · © 2026 Evan Wheeler · CC BY 4.0.*
+*Four Faces of AI Risk™ v1.1 · © 2026 Evan Wheeler · CC BY 4.0.*
