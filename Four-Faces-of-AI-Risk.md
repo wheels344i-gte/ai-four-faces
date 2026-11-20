@@ -1,6 +1,6 @@
 # Four Faces of AI Risk™
 
-**Version 1.1 · Open for comment · November 2026 · © 2026 Evan Wheeler · Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**
+**Version 1.2 · Open for comment · November 2026 · © 2026 Evan Wheeler · Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**
 
 *The differences matter.*
 
@@ -10,7 +10,7 @@ This file is the complete working reference for the Four Faces of AI Risk: the f
 
 ## The claim
 
-"AI risk" is not one risk. It is four, with different causes, owners, controls, data, and forms of loss, and nothing useful happens in an assessment until you say which one you mean.
+"AI risk" is not one risk. It is four kinds of risk, with different causes, owners, controls, data, and forms of loss, and nothing useful happens in an assessment until you say which one you mean.
 
 The face is the first question to ask of any AI risk scenario: why it happened. It sets the cause, and through the cause, the frequency driver.
 
@@ -32,6 +32,8 @@ The face names the kind of cause; the scenario names the specific one. One face 
 **Why the lines fall where they do.** The 1/2 line separates decisions from operations, because face 1 is measured as variance against a plan, at the pace of decision cycles. The 2/3 line follows intent, because accidents and deliberate misuse come from different threat communities with different frequencies. The 3/4 line follows whose AI, because the safeguards that matter and the evidence for frequency both change when the AI doing the damage is theirs.
 
 ## The four faces
+
+Each face is a category of risk, not a single risk: the risks you assess are the scenarios inside it.
 
 | # | Tag | Headline | Shorthand | The question |
 |---|---|---|---|---|
@@ -77,6 +79,8 @@ AI we chose to adopt is badly designed, built, or used. No one acted against us;
 - Oversight that cannot keep up
 
 **The loss:** **Operational, stakeholder, obligation, and information outcomes:** our AI fails or misfires and harms us or the people who depend on it.
+
+**When it spreads:** One flawed AI decision or output can reach thousands of people before anyone notices, such as a model applying the wrong rule to every application it scores for a month. Finding everyone it affected and making them whole is often the largest part of the loss, and the effort grows with time. A flaw caught within weeks leaves a trail that is easy to follow, and the people it harmed are still easy to reach. The same flaw found two years later has to be reconstructed from records that may have changed or been deleted, and many of those people have moved on, changed their contact details, or stopped being customers. So how many people one flaw can reach, and how long it runs before anyone finds it, drive how badly it lands, and the ability to find them and put it right is a face 2 safeguard. *(The AI Risk Map names its absence as AIRM-200: "No ability to identify everyone a flawed AI decision or output affected once the flaw is found, and to notify and remediate them.")*
 
 **So we:** Build and run it against a named set of risks, at every stage of its life.
 
@@ -314,7 +318,7 @@ You are helping me apply the Four Faces of AI Risk. Follow these rules:
 <!-- vocab:start -->
 | Use | Avoid | Why |
 |---|---|---|
-| faces, kinds (as the name for the four) | dimensions, quadrants (as the name) | Faces are sorted into, not scored along; it is not a 2×2. |
+| faces, kinds (as the name for the four); categories in formal definitions | dimensions, quadrants (as the name) | Faces are sorted into, not scored along; it is not a 2×2. |
 | condition type: cause, safeguard gap, amplifier, outcome (how a factor enters an assessment) | acts as; consequence; loss (as a condition type) | The AI Risk Map's field and values since v2.0; one vocabulary across the works |
 | abuse, intentional misuse (face 3) | misuse, unqualified | Misuse without intent is face 2 |
 | deliberate action (the 2/3 test) | malice, malicious (as the test) | A curious jailbreaker is face 3 without malice |
@@ -341,7 +345,7 @@ Four Faces of AI Risk © 2026 Evan Wheeler, licensed [CC BY 4.0](https://creativ
 
 Four Faces of AI Risk™ is a trademark of Evan Wheeler.
 
-**Cite as:** Wheeler, E. (2026). *Four Faces of AI Risk* v1.1. Licensed CC BY 4.0. https://www.riskframework.org/four-faces/
+**Cite as:** Wheeler, E. (2026). *Four Faces of AI Risk* v1.2. Licensed CC BY 4.0. https://www.riskframework.org/four-faces/
 
 ## Version history
 
@@ -349,7 +353,8 @@ Four Faces of AI Risk™ is a trademark of Evan Wheeler.
 |---|---|---|
 | **v1.0** | November 2026 | First public release, status Open for comment. Four faces (Strategy, Execution, Subversion, Attack), three placement questions, eleven edge rules, eight factor rules, a worked example, the finance view, and instructions for AI assistants. |
 | **v1.1** | November 2026 | Minor release, from early reviewer feedback. No face, question, or existing placement changes. ADDED: edge rule 12, when their AI attacks our AI the face is 3; a third case beside the 3/4 pair (an attacker's AI injecting instructions into our payments agent); a second worked example, depending on a foundation-model provider, with concentration treated as an amplifier. CLARIFIED: faces sort scenarios, not incidents; the face names the kind of cause and the scenario names the specific one, so one face can hold several scenarios. Graphics carry no version number from this release. |
+| **v1.2** | November 2026 | Minor release, from early reviewer feedback. No face, question, rule, or placement changes. CLARIFIED: the faces are kinds, or categories, of risk, not single risks: "It is four kinds of risk", and each face is a category of risk whose risks are the scenarios inside it. ADDED: a face 2 example of a flaw that spreads to many people before it is found, and why the time to find it drives the loss. Presentation deck: speaker notes on slides 9 and 15 reworded. |
 
 ---
 
-*Four Faces of AI Risk™ v1.1 · © 2026 Evan Wheeler · CC BY 4.0.*
+*Four Faces of AI Risk™ v1.2 · © 2026 Evan Wheeler · CC BY 4.0.*

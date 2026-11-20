@@ -3,12 +3,12 @@
   "mark": "Four Faces of AI Risk™",
   "trademark_notice": "Four Faces of AI Risk™ is a trademark of Evan Wheeler.",
   "tagline": "the differences matter",
-  "version": "1.1",
+  "version": "1.2",
   "status": "Open for comment",
   "license": "CC BY 4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
   "copyright": "© 2026 Evan Wheeler",
-  "claim": "\"AI risk\" is not one risk. It is four, with different causes, owners, controls, data, and forms of loss, and nothing useful happens in an assessment until you say which one you mean.",
+  "claim": "\"AI risk\" is not one risk. It is four kinds of risk, with different causes, owners, controls, data, and forms of loss, and nothing useful happens in an assessment until you say which one you mean.",
   "faces": [
     {
       "n": 1,
@@ -264,7 +264,7 @@
   ],
   "vocabulary": [
     {
-      "use": "faces, kinds (as the name for the four)",
+      "use": "faces, kinds (as the name for the four); categories in formal definitions",
       "avoid": "dimensions, quadrants (as the name)",
       "why": "Faces are sorted into, not scored along; it is not a 2×2."
     },
